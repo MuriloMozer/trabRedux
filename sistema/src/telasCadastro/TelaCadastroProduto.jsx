@@ -8,11 +8,11 @@ export default function TelaCadastroProduto(props) {
   const [exibirFormulario, setExibirFormulario] = useState(false);
  
   const [produtoParaEdicao, setProdutoParaEdicao] = useState({
-    id: "",
-    nome: "",
-    descricao: "",
-    preco: "",
-    estoque: "",
+    id: '',
+    nome: '',
+    descricao: '',
+    preco: '',
+    estoque: '',
   });
   const [modoEdicao, setModoEdicao] = useState(false);
 

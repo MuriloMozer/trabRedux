@@ -17,9 +17,8 @@ const fornecedorSlice = createSlice({
             state.listaFornecedores = state.listaFornecedores.filter(fornecedor => fornecedor.cnpj !== action.payload.cnpj);
         },
         atualizar:(state,action)=>{
-
-            const listaTemporariaFornecedores = state.listaClientes.filter(fornecedor => fornecedor.cnpj !== action.payload.cnpj);
-            state.listaFornecedores = [...listaTemporariaFornecedores, action.payload.fornecedor];
+            const listaTemporariaFornecedores = state.listaFornecedores.filter(fornecedor => fornecedor.cnpj !== action.payload.cnpj);
+            state.listaFornecedores = [...listaTemporariaFornecedores, action.payload];
         }
 
     }

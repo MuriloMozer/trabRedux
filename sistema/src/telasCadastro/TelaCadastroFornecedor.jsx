@@ -6,16 +6,15 @@ import TabelaFornecedores from "./tabelas/TabelaFornecedores";
 
 export default function TelaCadastroFornecedor(props) {
   const [exibirFormulario, setExibirFormulario] = useState(false);
-
   const [fornecedorParaEdicao, setFornecedorParaEdicao] = useState({
-    cnpj: "",
-    razaoSocial: "",
-    endereco: "",
-    numero: "",
-    bairro: "",
-    cidade: "",
+    cnpj: '',
+    razaoSocial: '',
+    endereco: '',
+    numero: '',
+    bairro: '',
+    cidade: '',
     uf: "SP",
-    cep: "",
+    cep: '',
   });
   const [modoEdicao, setModoEdicao] = useState(false);
 

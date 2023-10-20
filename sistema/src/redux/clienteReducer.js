@@ -22,7 +22,7 @@ const clienteSlice = createSlice({
             //Atualizar implicará em excluir o cliente da lista e adicioná-lo novamente com seus dados alterados
             //remover -> adicionar novamente com dados atualizados
             const listaTemporariaClientes = state.listaClientes.filter(cliente => cliente.cpf !== action.payload.cpf);
-            state.listaClientes = [...listaTemporariaClientes, action.payload.cliente];
+            state.listaClientes = [...listaTemporariaClientes, action.payload];
         }
 
     }

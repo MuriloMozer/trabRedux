@@ -18,8 +18,8 @@ const produtoSlice = createSlice({
         },
         atualizar:(state,action)=>{
 
-            const listaTemporariaProdutos = state.listaClientes.filter(produto => produto.id !== action.payload.id);
-            state.listaProdutos = [...listaTemporariaProdutos, action.payload.produto];
+            const listaTemporariaProdutos = state.listaProdutos.filter(produto => produto.id !== action.payload.id);
+            state.listaProdutos = [...listaTemporariaProdutos, action.payload];
         }
 
     }

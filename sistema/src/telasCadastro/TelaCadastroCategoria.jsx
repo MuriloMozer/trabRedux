@@ -6,8 +6,6 @@ import { Container } from "react-bootstrap";
 import TelaMensagem from "./TelaMensagem";
 
 export default function TelaCadastroCategorias(props){
-
-
     const [exibirFormulario, setExibirFormulario] = useState(false);
     const [categoriaParaEdicao, setCategoriaParaEdicao] = useState({
         nome:'',

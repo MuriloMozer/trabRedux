@@ -21,7 +21,7 @@ const categoriaSlice = createSlice({
         atualizar:(state,action)=>{
         
             const listaTemporariaCategorias = state.listaCategorias.filter(categoria => categoria.nome !== action.payload.nome);
-            state.listaCategorias = [...listaTemporariaCategorias, action.payload.categoria];
+            state.listaCategorias = [...listaTemporariaCategorias, action.payload];
         }
 
     }

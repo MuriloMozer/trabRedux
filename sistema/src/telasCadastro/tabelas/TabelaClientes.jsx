@@ -17,11 +17,9 @@ export default function TabelaClientes(props) {
     }
 
     function editarCliente(cliente){
-
         props.setClienteParaEdicao(cliente);
         props.setModoEdicao(true);
         props.exibirFormulario(true);
-
     }
 
 
